@@ -22,8 +22,8 @@ void loop()
       //int i;
       // Message with a good checksum received, dump it.
       //Serial.print("Message: ");
-      Serial.println(strcmp((char*)buf, "BO"));
-      //Serial.println((char*)buf);
+      Serial.println(strcmp((char*)buf, "BP"));
+      Serial.println((char*)buf);
       if(strcmp((char*)buf, "BP") == 0)
         {
           Serial.println("TX knows button is pressed");
