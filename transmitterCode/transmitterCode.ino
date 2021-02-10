@@ -2,7 +2,7 @@
 #include <SPI.h> // Not actually used but needed to compile
 
 const int buttonPin = 7;
-
+//tx pin is 12
 RH_ASK driver;
 
 void setup()
