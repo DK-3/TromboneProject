@@ -5,7 +5,7 @@
 
 Servo myservo;  // create servo object to control a servo
 // twelve servo objects can be created on most boards
-
+int led = 13;
 int pos = 0;    // variable to store the servo position
 const int servoPin = 7;
 int lastVal = 0;
@@ -24,6 +24,11 @@ void setup()
 
 void loop()
 {
+    digitalWrite(led, HIGH);   // LED Heartbeat
+    delay(500);               
+    digitalWrite(led, LOW);    
+    delay(500); 
+    
     uint8_t buf[2];
     uint8_t buflen = sizeof(buf);
     if (driver.recv(buf, &buflen)) // Non-blocking
